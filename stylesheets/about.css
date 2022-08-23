@@ -1,0 +1,255 @@
+/* About Stylesheet */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gaegu', cursive;
+}
+
+.lustria_font {
+    font-family: 'Lustria', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #959494;
+}
+
+body {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Nav Bar */
+
+#navBar {
+    color: #fff;
+    font-size: 20pt;
+    width: 85%;
+}
+
+#navBar a {
+    color: #fff;
+    opacity: .8;
+}
+
+#navBar a:hover {
+    opacity: 1;
+}
+
+#navBar ul {
+    position: absolute;
+    top: 0;
+    left: 33vw;
+    width: 33%;
+    text-align: center;
+    word-spacing: 2vw;
+}
+
+#navBar li {
+    display: inline;
+    
+}
+
+#navBar h4:first-child {
+    position: relative;
+    top: 0;
+    left: 3vw;
+}
+
+#navBar h4:last-child {
+    position: absolute;
+    top: 0;
+    right: 3vw;
+}
+
+#navBar h4:last-child:hover {
+    cursor: pointer;
+}
+
+.active {
+    opacity: 1;
+    border-bottom: 1px #fff solid;
+}
+
+
+/* Intro Quote and Pic */
+
+#intro_quote {
+    color: #fff;
+    font-size: 48pt;
+    position: relative;
+    top: 15vw;
+    left: 5vw;
+    width: fit-content;
+}
+
+#intro_quote h1 {
+    padding: 3vw;
+}
+
+#intro_pic {
+    position: relative;
+    top: -10vw;
+    left: 60vw;
+    width: 35%;
+}
+
+
+/* Snippet */
+
+#snippet {
+    position: relative;
+    top: -15vw;
+    left: 5vw;
+    width: 40%;
+}
+
+#snippet h2 {
+    font-size: 48pt;
+    font-weight: 100;
+}
+
+#snippet h3 {
+    position: relative;
+    left: 10vw;
+    font-size: 24pt;
+    width: 50%;
+}
+
+#snippet_summary {
+    text-align: left;
+    margin-top: 1vw;
+    font-size: 24pt;
+}
+
+/* Arrow Image */
+#arrow {
+    transform: rotate(120deg) rotateX(180deg);
+    width: 25%;
+    position: absolute;
+    top: 57vw;
+    left: 32vw;
+    z-index: -1;
+}
+
+/* Mini Quote */
+#mini_quote {
+    width: fit-content;
+    position: relative;
+    top: -25vw;
+    left: 60vw;
+}
+
+#mini_quote p {
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+
+/* About Me Section */
+#about_me_section {
+    display: flex;
+    font-size: 24pt;
+    margin-bottom: 5vw;
+}
+
+#serious {
+    width: 50%;
+    text-align: left;
+    padding: 3vw;
+    border-right: .15vw solid black;
+}
+
+#serious li {
+    font-family: 'Lustria', serif;
+}
+
+#not_serious {
+    width: 50%;
+    text-align: right;
+    padding: 3vw;
+    border-left: .15vw solid black;
+}
+
+
+/* Rectangles */
+#top_rectangle, #bottom_rectangle {
+    background-color: #000;
+    width: 100%;
+    height: 40vw;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Bottom Rectangle */
+#bottom_rectangle {
+    height: 25vw;
+}
+
+
+/* Footer */
+
+#footer, a {
+    color: #fff;
+}
+
+#footer a:hover {
+    opacity: .75;
+}
+
+
+#connect_title {
+    color: #fff;
+    position: relative;
+    top: 3vw;
+    left: 4vw;
+    font-size: 25pt;
+    width: 35%;
+    transform: rotate(-20deg);
+}
+
+#socials {
+    position: relative;
+    top: 7vw;
+    left: 15vw;
+    font-size: 30pt;
+    width: fit-content;
+}
+
+#footer h3, #siteMap {
+    position: relative;
+    left: 70vw;
+    top: -10vw;
+    font-size: 32pt;
+    width: fit-content;
+}
+
+#siteMap ul {
+    width: fit-content;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Lustria&display=swap">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="top_rectangle"></div>
+
+    <div id="navBar">
+        <h4>Deziallia Morris</h4>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="active">Contact</li>
+        </ul>
+        <h4 style="display: none;">Dark Mode</h4>
+    </div> <!-- end of navBar -->
+    <div id="main_container">
+        <div id="intro_quote">
+            <h1 class="lustria_font">Like what you see?<br>Let’s connect!</h1>
+        </div>
+
+        <div id="find_me">
+            <h2>Find me on my socials</h2>
+            <div id="find_me_arrow">
+                <img src="images/arrow.png" alt="Arrow">
+            </div>
+            <div id="social_bar">
+                <a href="https://github.com/dezji" target="_blank"><img src="images/github.png" alt="GitHub" style="width: 50%; position:relative; top:-.7vw; left:10vw;"></a>
+                <a href="https://www.linkedin.com/in/deziallia-morris-915a82248/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" style="width: 25%; position: relative; top:2vw; left: 6vw;"></a>
+            </div>
+        </div> <!-- end of find_me -->
+
+        <div id="no_social">
+            <h2>Not a fan of social media?<br>No problem!</h2>
+            <div id="no_social_arrow">
+                <img src="images/arrow.png" alt="Arrow">
+            </div>
+        </div> <!-- end of no_social -->
+
+        <div id="contact_form_div">
+            <form id="contact_form" action="extras/success.html" method="post" data-netlify="true">
+                <input class="user_input" type="text" name="first_name" placeholder="first name" required>
+                <br>
+                <input class="user_input" type="text" name="last_name" placeholder="last name" required>
+                <br>
+                <input class="user_input" type="email" name="email" placeholder="email@here.com" required>
+                <br>
+                <textarea  id="comment" name="comment" placeholder="any comments or queries?" rows="5"></textarea>
+                <br>
+                <input id="submit" type="submit" value="Submit">
+        </div> <!-- end of contact_form -->
+    </div> <!-- end of main_container -->
+
+
+    <div id="bottom_rectangle"></div>
+
+    <div id="footer">
+        <div id="connect_title"><h2>Connect with me!</h2></div>
+        <ul id="socials">
+            <li><a href="https://github.com/dezji">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/deziallia-morris-915a82248/">LinkedIn</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+        </ul>
+        <h3>Site Map</h3>
+        <ul id="siteMap" style="display: none;">
+            <li><a>links will go here</a></li>
+        </ul>
+    </div> <!-- end of footer -->
+</body>
+</html>

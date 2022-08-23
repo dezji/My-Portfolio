@@ -1,0 +1,288 @@
+/* Contact Stylesheet */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gaegu', cursive;
+}
+
+.lustria_font {
+    font-family: 'Lustria', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #959494;
+}
+
+body {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Nav Bar */
+
+#navBar {
+    color: #fff;
+    font-size: 20pt;
+    width: 85%;
+}
+
+#navBar a {
+    color: #fff;
+    opacity: .8;
+}
+
+#navBar a:hover {
+    opacity: 1;
+}
+
+#navBar ul {
+    position: absolute;
+    top: 0;
+    left: 33vw;
+    width: 33%;
+    text-align: center;
+    word-spacing: 2vw;
+}
+
+#navBar li {
+    display: inline;
+    
+}
+
+#navBar h4:first-child {
+    position: relative;
+    top: 0;
+    left: 3vw;
+}
+
+#navBar h4:last-child {
+    position: absolute;
+    top: 0;
+    right: 3vw;
+}
+
+#navBar h4:last-child:hover {
+    cursor: pointer;
+}
+
+.active {
+    opacity: 1;
+    border-bottom: 1px #fff solid;
+}
+
+
+/* Intro Quote and Pic */
+
+#intro_quote {
+    color: #fff;
+    font-size: 32pt;
+    text-align: center;
+    position: relative;
+    top: 10vw;
+}
+
+#intro_quote h1 {
+    padding: 3vw;
+}
+
+/* Find Me */
+#find_me {
+    position: relative;
+    top: 20vw;
+}
+
+#find_me h2 {
+    font-size: 48pt;
+}
+
+#find_me_arrow {
+    transform: rotate(180deg) rotateX(180deg);
+    width: 15%;
+    position: relative;
+    top: 1vw;
+    left: 10vw;
+}
+
+#social_bar {
+    position: relative;
+    left: 30vw;
+    top: -10vw;
+    background-color: #e2dfdf;
+    border-radius: 10vw;
+    width: 50%;
+    height: 10vw;
+    display: flex;
+}
+
+
+/* No Social */
+#no_social {
+    position: relative;
+    top: 25vw;
+    left: 45vw;
+    width: 50%;
+    margin-bottom: 10vw;
+}
+
+#no_social h2 {
+    font-size: 48pt;
+}
+
+#no_social_arrow {
+    transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+    width: 35%;
+    position: relative;
+    top: -2vw;
+    left: 15vw;
+}
+
+
+/* Contact Form */
+
+#contact_form_div {
+    border-radius: 3vw;
+    background-color: #e2dfdf;
+    margin-left: 3vw;
+    width: 35%;
+    padding: 5vw;
+    margin-bottom: 10vw;
+}
+
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+}
+
+.user_input {
+    color: #000;
+    width: 100%;
+    height: 5vw;
+    padding: 1vw;
+    outline: none;
+    border: none;
+    font-size: 24pt;
+    font-weight: bold;
+    border-bottom: 3px solid #79787899;
+    background-color: #ffffff;
+    transition: .7s;
+}
+
+.user_input:focus, #comment:focus {
+    border-bottom: 3px solid #79787899;
+    background-color: #efebeb;
+}
+
+#comment {
+    color: #000;
+    width: 100%;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    outline: none;
+    border: none;
+    font-size: 24pt;
+    font-weight: bold;
+    border-bottom: 3px solid #79787899;
+    background-color: #ffffff;
+    transition: .7s;
+    resize: none;
+}
+
+#submit {
+    padding: 1vw;
+    position: relative;
+    left: 6vw;
+    width: 50%;
+    height: 5vw;
+    font-size: 32pt;
+    border-radius: 10vw;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+
+/* Rectangles */
+#top_rectangle, #bottom_rectangle {
+    background-color: #000;
+    width: 100%;
+    height: 40vw;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Bottom Rectangle */
+#bottom_rectangle {
+    height: 25vw;
+}
+
+
+/* Footer */
+
+#footer, a {
+    color: #fff;
+}
+
+#footer a:hover {
+    opacity: .75;
+}
+
+
+#connect_title {
+    color: #fff;
+    position: relative;
+    top: 3vw;
+    left: 4vw;
+    font-size: 25pt;
+    width: 35%;
+    transform: rotate(-20deg);
+}
+
+#socials {
+    position: relative;
+    top: 7vw;
+    left: 15vw;
+    font-size: 30pt;
+    width: fit-content;
+}
+
+#footer h3, #siteMap {
+    position: relative;
+    left: 70vw;
+    top: -10vw;
+    font-size: 32pt;
+    width: fit-content;
+}
+
+#siteMap ul {
+    width: fit-content;
+}

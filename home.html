@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script href="scripts/playAudio.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Lustria&display=swap">
+    <title>Home</title>
+</head>
+<body class="light_bg">
+    <div id="top_rectangle"></div>
+
+    <div id="navBar">
+        <h4>Deziallia Morris</h4>
+        <ul>
+            <li class="active">Home</li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h4 style="display: none;">Dark Mode</h4>
+    </div> <!-- end of navBar -->
+
+    <div id="intro_quote" class="light_text">
+        <h1>she believed<br>she could so<br>she did</h1>
+    </div>
+
+    <div id="intro_pic">
+        <img src="images/intro_pic.jpg" alt="Intro Picture">
+    </div>
+
+    <div id="snippet" class="light_main_text">
+        <h2 id="snippet_title" class="lustria_font">I am Deziallia Morris</h2>
+        <h3 id="snippet_subtitle" onclick="playMyAudio()">(dee zjuh leah)</h3>
+        <audio id="pronunciation" src="extras/audio/pronounce.mp3"></audio>
+        <script>
+            function playMyAudio(){
+              document.getElementById("pronunciation").play();
+            }
+          </script>
+        <p id="snippet_summary" class="lustria_font">
+            I am a Full Stack Developer who is highly motivated and eager to learn from new experiences.<br>
+            The motto I live by is no risk, no story.
+        </p>
+        <p><a href="about.html" class="light_main_text">See more</a></p>
+    </div> <!-- end of snippet -->
+
+    <div id="project_section" class="light_main_text">
+        <h1>A few of my favorite projects:</h1>
+        <div id="projects">
+            <div class="project_layout image_hover">
+                <a href="https://dezji-book-tracker.netlify.app/book-tracker/usermain" target="_blank"><img src="images/book-tracker.png" alt="."></a>
+                <h3 class="project_title">Book Tracker</h3>
+            </div>
+            <div class="project_layout image_hover">
+                <a href="https://dezji-favorite-city.netlify.app/favorite-city/activities.html" target="_blank"><img src="images/favorite-town.png"  alt="."></a>
+                <h3 class="project_title">My Favorite City</h3>
+            </div>
+            <div class="project_layout image_hover">
+                <a href="https://github.com/dezji/RockPaperScissors" target="_blank"><img src="images/rps.png" alt="."></a>
+                <h3 class="project_title">Rock Paper Scissors with a Twist</h3>
+            </div>
+            <div class="project_layout image_hover">
+                <a href="https://github.com/dezji/VendingMachines" target="_blank"><img src="images/vend.png" alt="."></a>
+                <h3 class="project_title">Vending Machine</h3>
+            </div>
+        </div>
+        <p><a href="projects.html" class="light_main_text">See more</a></p>
+    </div> <!-- end of project_section-->
+
+    <div id="bottom_rectangle"></div>
+
+    <div id="footer" class="light_text">
+        <div id="connect_title"><h2>Connect with me!</h2></div>
+        <ul id="socials">
+            <li><a href="https://github.com/dezji" class="light_text">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/deziallia-morris-915a82248/" class="light_text">LinkedIn</a></li>
+            <li><a href="contact.html" class="light_text">Contact me</a></li>
+        </ul>
+        <h3>Site Map</h3>
+        <ul id="siteMap" style="display: none;">
+            <li><a>links will go here</a></li>
+        </ul>
+    </div> <!-- end of footer -->
+</body>
+</html>

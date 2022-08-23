@@ -1,0 +1,391 @@
+/* Projects Stylesheet */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gaegu', cursive;
+}
+
+.lustria_font {
+    font-family: 'Lustria', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #959494;
+}
+
+body {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Nav Bar */
+
+#navBar {
+    color: #fff;
+    font-size: 20pt;
+    width: 85%;
+}
+
+#navBar a {
+    color: #fff;
+    opacity: .8;
+}
+
+#navBar a:hover {
+    opacity: 1;
+}
+
+#navBar ul {
+    position: absolute;
+    top: 0;
+    left: 33vw;
+    width: 33%;
+    text-align: center;
+    word-spacing: 2vw;
+}
+
+#navBar li {
+    display: inline;
+    
+}
+
+#navBar h4:first-child {
+    position: relative;
+    top: 0;
+    left: 3vw;
+}
+
+#navBar h4:last-child {
+    position: absolute;
+    top: 0;
+    right: 3vw;
+}
+
+#navBar h4:last-child:hover {
+    cursor: pointer;
+}
+
+.active {
+    opacity: 1;
+    border-bottom: 1px #fff solid;
+}
+
+
+/* Intro Quote and Pic */
+
+#intro_quote {
+    color: #fff;
+    font-size: 48pt;
+    position: relative;
+    top: 15vw;
+    left: 5vw;
+    width: fit-content;
+}
+
+#intro_quote h1 {
+    padding: 3vw;
+}
+
+#intro_pic {
+    position: relative;
+    top: 30vw;
+    left: 55vw;
+    width: 40%;
+}
+
+.overlay {
+    background-color: #000;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    color: #fff;
+}
+
+.overlay h4, .overlay p {
+    text-align: center;
+}
+
+.overlay h4 {
+    font-size: 38pt;
+    position: relative;
+    padding: 2vw;
+}
+
+.overlay_desc {
+    overflow: auto;
+    padding: 1vw;
+    height: 65%;
+    padding-bottom: 2vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
+}
+
+.overlay_desc::-webkit-scrollbar {
+    width: 0;
+}
+
+.overlay p {
+    font-size: 18pt;
+}
+
+.overlay:hover {
+    opacity: .95;
+}
+
+#recent {
+    position: relative;
+    top: 2vw;
+    left: 58vw;
+    width: fit-content;
+    font-size: 40pt;
+}
+
+
+/* Snippet */
+
+#snippet {
+    position: relative;
+    left: 2vw;
+    width: 50%;
+}
+
+#snippet h2 {
+    font-size: 48pt;
+    font-weight: 100;
+}
+
+#snippet h3 {
+    font-size: 16pt;
+    width: 50%;
+}
+
+#snippet_summary {
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+    margin-left: 2vw;
+    font-size: 32pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#snippet_summary ul {
+    list-style-type: disc;
+}
+
+
+#snippet p a {
+    position: relative;
+    top: 2vw;
+    left: 30vw;
+    color: #000;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+
+/* Project Section */
+
+#project_section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -5vw;
+}
+
+#project_section h1 {
+    font-weight: bold;
+    font-size: 55pt;
+    position: relative;
+    left: 5vw;
+    width: 50%;
+    margin-bottom: 2vw;
+    margin-top: 7vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vw;
+    justify-content: space-evenly;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project_title {
+    font-size: 40pt;
+    text-align: center;
+    width: 100%;
+}
+
+
+.project_image {
+    width: 600px;
+    height: 350px;
+    margin-bottom: 2vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project_overlay {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s;
+    color: #fff;
+}
+
+.project_overlay p {
+    padding: 2vw;
+    text-align: center;
+}
+
+.project_overlay_desc {
+    overflow: auto;
+    padding: 3vw;
+    height: 90%;
+}
+
+.project_overlay_desc::-webkit-scrollbar {
+    width: 0;
+}
+
+.project_overlay p {
+    font-size: 18pt;
+}
+
+.project_overlay:hover {
+    opacity: .95;
+}
+
+.project_desc {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project_desc a {
+    background-color: #333;
+    opacity: .95;
+    padding: 1vw;
+    font-size: 32pt;
+    width: 35%;
+    text-align: center;
+    border-radius: 10vw;
+}
+
+.project_desc a:hover {
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.drop_arrow {
+    width: 5%;
+    transform: rotateX(0deg);
+    cursor: pointer;
+}
+
+.up_arrow {
+    width: 5%;
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+
+/* Rectangles */
+#top_rectangle, #bottom_rectangle {
+    background-color: #000;
+    width: 100%;
+    height: 40vw;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Bottom Rectangle */
+#bottom_rectangle {
+    height: 25vw;
+    margin-top: 10vw;
+}
+
+
+/* Footer */
+
+#footer {
+    margin-top: 10vw;
+}
+
+#footer, a {
+    color: #fff;
+}
+
+#footer a:hover {
+    opacity: .75;
+}
+
+
+#connect_title {
+    color: #fff;
+    position: relative;
+    top: 3vw;
+    left: 4vw;
+    font-size: 25pt;
+    width: 35%;
+    transform: rotate(-20deg);
+}
+
+#socials {
+    position: relative;
+    top: 7vw;
+    left: 15vw;
+    font-size: 30pt;
+    width: fit-content;
+}
+
+#footer h3, #siteMap {
+    position: relative;
+    left: 70vw;
+    top: -10vw;
+    font-size: 32pt;
+    width: fit-content;
+}
+
+#siteMap ul {
+    width: fit-content;
+}

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/projects.css">
+    <script href="toggleProjects"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Lustria&display=swap">
+    <title>Project</title>
+</head>
+<body>
+    <script>
+        function expandProject_Java() {
+            document.getElementById("projectVisibility1").classList.toggle("hide");
+            var arrow = document.getElementById("java_arrow");
+
+            if (arrow.classList.contains("drop_arrow")) {
+                arrow.classList.remove("drop_arrow");
+                arrow.classList.add("up_arrow");
+            }
+            else {
+                arrow.classList.remove("up_arrow");
+                arrow.classList.add("drop_arrow");
+            }
+        }
+        function expandProject_Web() {
+            document.getElementById("projectVisibility2").classList.toggle("hide");
+            var arrow = document.getElementById("web_arrow");
+
+            if (arrow.classList.contains("drop_arrow")) {
+                arrow.classList.remove("drop_arrow");
+                arrow.classList.add("up_arrow");
+            }
+            else {
+                arrow.classList.remove("up_arrow");
+                arrow.classList.add("drop_arrow");
+            }
+        }
+        function expandProject_Python() {
+            document.getElementById("projectVisibility3").classList.toggle("hide");
+            var arrow = document.getElementById("python_arrow");
+
+            if (arrow.classList.contains("drop_arrow")) {
+                arrow.classList.remove("drop_arrow");
+                arrow.classList.add("up_arrow");
+            }
+            else {
+                arrow.classList.remove("up_arrow");
+                arrow.classList.add("drop_arrow");
+            }
+        }
+        function expandProject_Systems() {
+            document.getElementById("projectVisibility4").classList.toggle("hide");
+            var arrow = document.getElementById("systems_arrow");
+
+            if (arrow.classList.contains("drop_arrow")) {
+                arrow.classList.remove("drop_arrow");
+                arrow.classList.add("up_arrow");
+            }
+            else {
+                arrow.classList.remove("up_arrow");
+                arrow.classList.add("drop_arrow");
+            }
+        }
+        function expandProject_Cpp() {
+            document.getElementById("projectVisibility5").classList.toggle("hide");
+            var arrow = document.getElementById("cpp_arrow");
+
+            if (arrow.classList.contains("drop_arrow")) {
+                arrow.classList.remove("drop_arrow");
+                arrow.classList.add("up_arrow");
+            }
+            else {
+                arrow.classList.remove("up_arrow");
+                arrow.classList.add("drop_arrow");
+            }
+        }
+        function expandProject_JS() {
+            document.getElementById("projectVisibility6").classList.toggle("hide");
+            var arrow = document.getElementById("js_arrow");
+
+            if (arrow.classList.contains("drop_arrow")) {
+                arrow.classList.remove("drop_arrow");
+                arrow.classList.add("up_arrow");
+            }
+            else {
+                arrow.classList.remove("up_arrow");
+                arrow.classList.add("drop_arrow");
+            }
+        }
+    </script>
+    <div id="top_rectangle"></div>
+
+    <div id="navBar">
+        <h4>Deziallia Morris</h4>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active">Projects</li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h4 style="display: none;">Dark Mode</h4>
+    </div> <!-- end of navBar -->
+
+    <div id="intro_quote">
+        <h1>My Projects</h1>
+    </div>
+
+    <div id="intro_pic">
+        <a href="https://dezji-favorite-city.netlify.app/favorite-city/activities.html" target="_blank"><div class="overlay">
+            <h4 class="lustria_font">My Favorite City</h4>
+            <div class="overlay_desc">
+                <p class="lustria_font">
+                    A website that describes my favorite city and showcases the power of jQuery and JavaScript.
+                </p>
+            </div>
+        </div></a>
+        <img src="images/favorite-town.png" alt="Intro Picture">
+    </div>
+    <h2 id="recent">My Most Recent Project</h2>
+
+    <div id="snippet">
+        <h2 id="snippet_title" class="lustria_font">My Languages</h2>
+        <h3 id="snippet_subtitle" class="lustria_font">now we're talking er... typing</h3>
+        <div id="snippet_summary">
+            <ul>
+                <li>Java (3 years)</li>
+                <li>Python (3 years)</li>
+                <li>HTML5 (3 years)</li>
+                <li>CSS3 (3 years)</li>
+                <li>SQL (2 years)</li>
+            </ul>
+            <ul>
+                <li>JavaScript (2 years)</li>
+                <li>C++ (2 years)</li>
+                <li>Systems A. (2 years)</li>
+                <li>PHP (1 year)</li>
+                <li>Git (1 year)</li>
+            </ul>
+        </div>
+    </div> <!-- end of snippet -->
+
+    <div id="project_section">
+        <h1>Java Projects&nbsp;<img src="images/drop_down_arrow.png" alt="Drop Down" class="drop_arrow" id="java_arrow" onclick="expandProject_Java()"></h1>
+        <div id="projectVisibility1" class="projects hide">
+            <!-- row 1 -->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Graphs</h3>
+                    <div class="project_image" style="background-image: url(images/Graphs.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program demonstrates how graphs in Java can be utilized. The maze included was used to find several 
+                                    exits and output the path to the user. It uses nodes to find each exit in the maze.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Graphs" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Trees</h3>
+                    <div class="project_image" style="background-image: url(images/Trees.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program constructs a tree based off the hierarchy of a police department. Example department is included.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Java-Trees" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2-->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Password Manager</h3>
+                    <div class="project_image" style="background-image: url(images/password-manager.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program creates a user's password upon creating a user.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Password-Manager" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Bubble Sort</h3>
+                    <div class="project_image" style="background-image: url(images/Bubble-Sort.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This programs demonstrates the bubble sort. Given two lists: one of integers and the other of strings, 
+                                    the function will iterate through the list, swapping adjacent elements if they are not in the correct order.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Bubble-Sort" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of java_projects -->
+
+        <h1>Full-Stack / Web Projects&nbsp;<img src="images/drop_down_arrow.png" alt="Drop Down" class="drop_arrow" id="web_arrow" onclick="expandProject_Web()"></h1>
+        <div id="projectVisibility2" class="projects hide">
+            <!-- row 1 -->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">My Favorite City</h3>
+                    <div class="project_image" style="background-image: url(images/favorite-town.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    A website that describes my favorite city and showcases the power of jQuery and JavaScript.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://dezji-favorite-city.netlify.app/favorite-city/activities.html" target="_blank"><h3>Website</h3></a>
+                        <a href="https://github.com/dezji/Favorite-City" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Book Tracker Website</h3>
+                    <div class="project_image" style="background-image: url(images/book-tracker.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    Allows the tracking and inventory of books.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://dezji-book-tracker.netlify.app/book-tracker/usermain" target="_blank"><h3>Website</h3></a>
+                        <a href="https://github.com/dezji/Book-Tracker-Website" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2-->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">My Portfolio</h3>
+                    <div class="project_image" style="background-image: url(images/my-portfolio.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This project incorporated an online album that shows screen captures of built programs with a description of 
+                                    each programs' purpose and features. Included a submission field for others to submit their inquiries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://dezji-portfolio.netlify.app" target="_blank"><h3>Website</h3></a>
+                        <a href="https://github.com/dezji/My-Portfolio" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of web_projects -->
+
+        <h1>Python Projects&nbsp;<img src="images/drop_down_arrow.png" alt="Drop Down" class="drop_arrow" id="python_arrow" onclick="expandProject_Python()"></h1>
+        <div id="projectVisibility3" class="projects hide">
+            <!-- row 1 -->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Airport Codes</h3>
+                    <div class="project_image" style="background-image: url(images/airport.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program creates a dictionary of airport codes. The user can then search for a specific airport code.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Airport-Codes" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Illness Test</h3>
+                    <div class="project_image" style="background-image: url(images/illness.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program helps to discern the Flu from allergies or COVID-19. The user can use this to diagnose themselves with any of the listed illnesses, as well as their common symtoms.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Illness-Test" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2-->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Population</h3>
+                    <div class="project_image" style="background-image: url(images/population.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program determines a population by measuring an amount of organisms within a set of parameters and then outputs the data to the user.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Population" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Lo Shu Magic Square</h3>
+                    <div class="project_image" style="background-image: url(images/Magic_Square.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program tests different inputs to see which one qualifies as a magic square. Accroding to Wikipedia, Lo Shu magic square is the unique normal magic 
+                                    square of order three (every normal magic square of order three is obtained from the Lo Shu by rotation or reflection).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Lo-Shu-Magic-Square" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of python_projects -->
+
+        <h1>Systems Anaylsis Projects&nbsp;<img src="images/drop_down_arrow.png" alt="Drop Down" class="drop_arrow" id="systems_arrow" onclick="expandProject_Systems()"></h1>
+        <div id="projectVisibility4" class="projects hide">
+            <!-- row 1 -->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Deliverable 1</h3>
+                    <div class="project_image" style="background-image: url(images/deliverable1.JPG);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    Created a product vision to help describe a project in high level terms. This vision indicated the business's need and was addressed along with 
+                                    the target market. Also outlined in this product vision, the return or value to the company was discussed and answered the question as to why the product 
+                                    was created.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://1drv.ms/w/s!AgN64ymJiUtfeVU1aJCvua3JSWk?e=eKpJj6" target="_blank"><h3>Work</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Deliverable 2</h3>
+                    <div class="project_image" style="background-image: url(images/deliverable2.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    Drew up the Context Diagrams with a Process 0. Alongside the Context Diagram, I also created the 
+                                    Diagram 0 DFD. In this diagram, the major internal processes, data flows, and data stores were presented. The Object  
+                                    Diagram was set up during this sprint.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://1drv.ms/w/s!AgN64ymJiUtfbylu7WHfcSFvJrQ?e=kaIAVc" target="_blank"><h3>Work</h3></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2-->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Deliverable 3</h3>
+                    <div class="project_image" style="background-image: url(images/deliverable3.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    Developed a mock-up of the final product. This mock-up considered the end user's experience to using the product.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://1drv.ms/w/s!AgN64ymJiUtfcV3xihYaV8IET9w?e=mYcvO9" target="_blank"><h3>Work</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of systems_projects -->
+
+        <h1>C++ Projects&nbsp;<img src="images/drop_down_arrow.png" alt="Drop Down" class="drop_arrow" id="cpp_arrow" onclick="expandProject_Cpp()"></h1>
+        <div id="projectVisibility5" class="projects hide">
+            <!-- row 1 -->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Polymorphism with Shapes</h3>
+                    <div class="project_image" style="background-image: url(images/Shapes.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program demonstrates operator overloading, inheritance, and polymorphism by utilizing a class hierarchy of shapes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Overloading-Inheritance-Polymorphism_Of_A_Class" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Demonstrating Pointers</h3>
+                    <div class="project_image" style="background-image: url(images/Demoing\ Pointers.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program demonstrates the use of pointers. Given any input, this program prints, reverses, and prints the input.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Demo-Pointer" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2-->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Linked Lists</h3>
+                    <div class="project_image" style="background-image: url(images/Linked-List.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program demonstrates how linked lists can be manipulated to form many types of relationships and how to implement a linked list from scratch.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Linked-List" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Speed Trap</h3>
+                    <div class="project_image" style="background-image: url(images/Speed\ Trap.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    Determines the speeding fine for drivers of various speeds
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://github.com/dezji/Speed-Trap" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of Cpp_projects -->
+
+        <h1>JavaScript Projects&nbsp;<img src="images/drop_down_arrow.png" alt="Drop Down" class="drop_arrow" id="js_arrow" onclick="expandProject_JS()"></h1>
+        <div id="projectVisibility6" class="projects hide">
+            <!-- row 1 -->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">JS Plugin Demo</h3>
+                    <div class="project_image" style="background-image: url(images/plugin-demo.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program utilizes a bxSlider as the main plugin for an image gallery. It showcases how the slideshow can be manipulated in jQuery. 
+                                    There is also a reservation form that is validated by jQuery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://dezji-js-plugin-demo.netlify.app/" target="_blank"><h3>Website</h3></a>
+                        <a href="https://github.com/dezji/JS-Plugin-Demo" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Image Swap / Carousel</h3>
+                    <div class="project_image" style="background-image: url(images/image_swap.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program showcases a jQuery powered carousel and image gallery. It demonstrates jQuery animations and effects on DOM elements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://dezji-image-swap-carousel.netlify.app/" target="_blank"><h3>Website</h3></a>
+                        <a href="https://github.com/dezji/Image-Swap-Carousel" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2-->
+            <div class="row">
+                <div class="project_layout">
+                    <h3 class="project_title">Expand/Collapse / Gallery</h3>
+                    <div class="project_image" style="background-image: url(images/expand-collapse.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program demonstrates the power of jQuery with an expand/collapse information site and an image gallery that displays a picture and its caption.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://dezji-expand-collapse-gallery.netlify.app/" target="_blank"><h3>Website</h3></a>
+                        <a href="https://github.com/dezji/Expand-Collapse-Gallery" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+                <div class="project_layout">
+                    <h3 class="project_title">Convert Temperatures</h3>
+                    <div class="project_image" style="background-image: url(images/convert_temp.png);">
+                        <div class="project_overlay">
+                            <div class="project_overlay_desc">
+                                <p class="lustria_font">
+                                    This program answers questions to some fundmental elements of JavaScript. It also demonstrates a temperature converter that uses JavaScript.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_desc">
+                        <a href="https://dezji-convert-temps.netlify.app/" target="_blank"><h3>Website</h3></a>
+                        <a href="https://github.com/dezji/Convert-Temperatures" target="_blank"><h3>Code</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of javascript_projects -->
+
+    </div> <!-- end of project_section-->
+
+    <div id="bottom_rectangle"></div>
+
+    <div id="footer">
+        <div id="connect_title"><h2>Connect with me!</h2></div>
+        <ul id="socials">
+            <li><a href="https://github.com/dezji">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/deziallia-morris-915a82248/">LinkedIn</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+        </ul>
+        <h3>Site Map</h3>
+        <ul id="siteMap" style="display: none;">
+            <li><a>links will go here</a></li>
+        </ul>
+    </div> <!-- end of footer -->
+</body>
+</html>
